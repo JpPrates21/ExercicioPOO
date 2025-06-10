@@ -1,0 +1,3 @@
+UsuarioComum,Joao,joao@gmail.com
+UsuarioAdministrador,Jorge,jorge@gmail.com,admin
+UsuarioComum,Pedro,pedro@gmail.com
