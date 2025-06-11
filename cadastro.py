@@ -66,6 +66,6 @@ class UsuarioAdministrador(UsuarioComum):
 
 
 Usuario1 = UsuarioComum.cadastrar("Pedro", "pedro@gmail.com")
-Admin1 = UsuarioAdministrador.cadastrar("Jorge", "jorge@gmail.com", "admin")
+Admin1 = UsuarioAdministrador.cadastrar("Luiz", "Luiz@gmail.com", "admin")
 
 
