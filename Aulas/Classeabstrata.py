@@ -15,10 +15,6 @@ class Professor(Pessoa):
     def trabalhar(self):
         print("O Professor está dando aula")
     
-
-
-
-
 p1 = Professor() 
 p1.correr()
 p1.trabalhar()

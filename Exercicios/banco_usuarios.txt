@@ -2,3 +2,6 @@ UsuarioComum,Joao,joao@gmail.com
 UsuarioAdministrador,Jorge,jorge@gmail.com,admin
 UsuarioComum,Pedro,pedro@gmail.com
 UsuarioAdministrador,Luiz,Luiz@gmail.com,admin
+
+
+UsuarioAdministrador,Camila,Camila@gmail.com,admin

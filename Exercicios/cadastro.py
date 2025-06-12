@@ -3,7 +3,7 @@ from abc import ABC, abstractmethod
 
 def usuario_existe(email):
     try:
-        with open("banco_usuarios.txt", "r", encoding="utf-8") as f:
+        with open("Exercicios/banco_usuarios.txt", "r", encoding="utf-8") as f:
             for linha in f:
                 partes = linha.strip().split(",")
 
@@ -15,7 +15,7 @@ def usuario_existe(email):
     
 
 def salvar_usuario_em_arquivo(tipo, nome, email, nivel_acesso=None):
-    with open("banco_usuarios.txt", "a", encoding="utf-8") as f:
+    with open("Exercicios/banco_usuarios.txt", "a", encoding="utf-8") as f:
         if tipo == "comum":
             f.write(f"UsuarioComum,{nome},{email}\n")
         elif tipo == "admin":
@@ -65,7 +65,7 @@ class UsuarioAdministrador(UsuarioComum):
 
 
 
-Usuario1 = UsuarioComum.cadastrar("Pedro", "pedro@gmail.com")
-Admin1 = UsuarioAdministrador.cadastrar("Luiz", "Luiz@gmail.com", "admin")
+
+Admin1 = UsuarioAdministrador.cadastrar("Camila", "Camila@gmail.com", "admin")
 
 

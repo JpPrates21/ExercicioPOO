@@ -56,6 +56,6 @@ class ExtratorTXT(ExtratorDados):
                 print(f"   Função: {usuario['funcao']}")
             print(" ")
 
-extrator = ExtratorTXT("banco_usuarios.txt")
+extrator = ExtratorTXT("Exercicios/banco_usuarios.txt")
 extrator.extrair_dados()
 extrator.exibir_usuarios()
