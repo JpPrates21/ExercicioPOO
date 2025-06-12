@@ -2,19 +2,28 @@ class Aluno:
     def __init__(self, nome, serie, nota):
         self.nome = nome
         self.serie = serie
-        self.__nota = nota
+        self._nota = nota   # Atributo privado
 
     @property
     def nota(self):
-        return self.__nota
+        return self._nota   # Getter
     
     @nota.setter
     def nota(self, valor):
         if 0 <= valor <= 10:
-            self.__nota = valor
+            self._nota = valor  #Setter com validação
         else:
-            raise ValueError("A nota deve estar entre 0 e 10.")
+            print("A nota deve estar entre 0 e 10")
+
+  
         
-aluno = Aluno("Maria", "5ª", 8.0)
-print(aluno.nome)       # OK
-print(aluno.serie)      # OK
+aluno1 = Aluno("Lucas", "8°", 7)
+print(aluno1.nota)
+
+aluno1.nota = 9
+print(aluno1.nota)
+
+aluno1.nota = 12
+
+
+
