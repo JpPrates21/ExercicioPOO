@@ -12,13 +12,12 @@ class Pessoa():
             self.__apresentar_documento()
         print("Bebendo...")
 
-    
     def __apresentar_documento(self):
         print(self.__cpf)
         
 
 
-Camila = Pessoa("Camila", 19, 15186666637)
+Camila = Pessoa("Camila", 19, "123.456.789-10")
 
 Camila.correr()
 

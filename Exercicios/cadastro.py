@@ -46,8 +46,6 @@ class UsuarioComum(Usuario):
         salvar_usuario_em_arquivo("comum", nome, email)      
         return cls(nome, email)
 
-
-
 class UsuarioAdministrador(UsuarioComum):
     def __init__(self, nome, email, nivel_acesso: str):
         super().__init__(nome, email)
