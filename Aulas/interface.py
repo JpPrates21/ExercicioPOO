@@ -22,17 +22,6 @@ class Cozinheiro(Trabalhador):
     def horario_de_almoco(self):
         print("O Cozinheiro está almocando")
 
-class Pedreiro(Trabalhador):
-    def trabalhar(self):
-        print("O Pedreiro está trabalhando")
-
-    def ir_para_casa(self):
-        print("O Pedreiro está indo pra casa")
-
-    def horario_de_almoco(self):
-        print("O Pedreiro está almocando")
-
-
 def comunicar_trabalhador(trabalhador: Trabalhador):
     trabalhador.trabalhar()
     print("Comunicar ao trabalhador para ir para casa")
